@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    background-color: #e6e6e6;
+    color: rgb(0, 0, 0);
+  }
+  
+  .app-container {
+    display: flex;
+  }
+  
+  .main-content {
+    margin-left: 60px; /* Leave space for the sidebar */
+    padding: 50px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .highlight {
+    color: #23c8ce;
+    position: relative;
+    background: linear-gradient(90deg, #0384bc, #3dc0e0, #0488b1);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+  }
+  
+  .subtitle {
+    font-size: 2rem;
+    color: #0b0b0b;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  @keyframes shimmer {
+    to {
+      background-position: 200% center;
+    }
+  }
+  

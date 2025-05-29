@@ -1,0 +1,263 @@
+/* Base styles */
+.article-editor-container {
+    max-width: 960px; /* Equivalent to max-w-4xl */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px; /* Equivalent to p-6 */
+    background-color: #fff; /* Equivalent to bg-white */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1); /* Similar to shadow-lg */
+    border-radius: 8px; /* Equivalent to rounded-lg */
+    font-family: 'Manrope', sans-serif; /* Assuming 'Manrope' is a custom font */
+  }
+  
+  /* Article Title */
+  .article-title-container {
+    margin-bottom: 32px; /* Equivalent to mb-8 */
+    border-bottom: 1px solid #e5e7eb; /* Equivalent to border-b */
+    padding-bottom: 16px; /* Equivalent to pb-4 */
+  }
+  
+  .edit-title-input-group {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Equivalent to space-x-4 */
+  }
+  
+  .edit-title-input {
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    font-weight: 700; /* Equivalent to font-bold */
+    width: 100%;
+    padding: 8px; /* Equivalent to p-2 */
+    border: 1px solid #d1d5db; /* Equivalent to border */
+    border-radius: 4px; /* Equivalent to rounded */
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .save-title-button {
+    padding: 8px; /* Equivalent to p-2 */
+    background-color: #3b82f6; /* Equivalent to bg-blue-500 */
+    color: #fff; /* Equivalent to text-white */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+    border: none;
+  }
+  
+  .save-title-button:hover {
+    background-color: #2563eb; /* Equivalent to hover:bg-blue-600 */
+  }
+  
+  .view-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Equivalent to justify-between */
+  }
+  
+  .article-title {
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    font-weight: 700; /* Equivalent to font-bold */
+  }
+  
+  .edit-title-button {
+    padding: 8px; /* Equivalent to p-2 */
+    background-color: #e5e7eb; /* Equivalent to bg-gray-200 */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+    border: none;
+  }
+  
+  .edit-title-button:hover {
+    background-color: #d1d5db; /* Equivalent to hover:bg-gray-300 */
+  }
+  
+  /* Article Blocks */
+  .article-blocks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Equivalent to space-y-6 */
+  }
+  
+  .article-block {
+    border: 1px solid #d1d5db; /* Equivalent to border */
+    border-radius: 8px; /* Equivalent to rounded-lg */
+    padding: 16px; /* Equivalent to p-4 */
+    position: relative; /* For absolute positioning of controls */
+  }
+  
+  .block-controls {
+    position: absolute;
+    top: 8px; /* Equivalent to top-2 */
+    right: 8px; /* Equivalent to right-2 */
+    display: flex;
+    gap: 8px; /* Equivalent to space-x-2 */
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out; /* Equivalent to transition-opacity */
+  }
+  
+  .article-block:hover .block-controls {
+    opacity: 1; /* Equivalent to group-hover:opacity-100 */
+  }
+  
+  .edit-block-button,
+  .delete-block-button {
+    padding: 4px; /* Roughly equivalent to p-1 */
+    border-radius: 4px; /* Equivalent to rounded */
+    cursor: pointer;
+    border: none;
+  }
+  
+  .edit-block-button {
+    background-color: #eff6ff; /* Equivalent to bg-blue-100 */
+    color: #3b82f6;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .edit-block-button:hover {
+    background-color: #dbeafe; /* Equivalent to hover:bg-blue-200 */
+  }
+  
+  .delete-block-button {
+    background-color: #fee2e2; /* Equivalent to bg-red-100 */
+    color: #ef4444;
+    transition: background-color 0.15s ease-in-out;
+  }
+  
+  .delete-block-button:hover {
+    background-color: #fca5a5; /* Equivalent to hover:bg-red-200 */
+  }
+  
+  .edit-text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Equivalent to space-y-2 */
+  }
+  
+  .text-input {
+    width: 100%;
+    padding: 8px; /* Equivalent to p-2 */
+    border: 1px solid #d1d5db; /* Equivalent to border */
+    border-radius: 4px; /* Equivalent to rounded */
+    min-height: 128px; /* Roughly equivalent to min-h-32 */
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .save-block-button {
+    padding: 8px 16px; /* Equivalent to px-4 py-2 */
+    background-color: #3b82f6; /* Equivalent to bg-blue-500 */
+    color: #fff; /* Equivalent to text-white */
+    border-radius: 4px; /* Equivalent to rounded */
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+    font-family: 'Manrope', sans-serif;
+    border: none;
+  }
+  
+  .save-block-button:hover {
+    background-color: #2563eb; /* Equivalent to hover:bg-blue-600 */
+  }
+  
+  .text-content {
+    color: #4b5563; /* Equivalent to text-gray-800 */
+    font-family: 'Manrope', sans-serif;
+    text-align: left;
+  }
+  
+  .edit-image-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Equivalent to space-y-4 */
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Equivalent to space-y-2 */
+  }
+  
+  .form-label {
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 500; /* Equivalent to font-medium */
+    color: #374151; /* Equivalent to text-gray-700 */
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 8px; /* Equivalent to p-2 */
+    border: 1px solid #d1d5db; /* Equivalent to border */
+    border-radius: 4px; /* Equivalent to rounded */
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center; /* Equivalent to justify-center */
+  }
+  
+  .article-image {
+    max-width: 100%; /* Equivalent to max-w-full */
+    height: auto; /* Equivalent to h-auto */
+    border-radius: 8px; /* Equivalent to rounded */
+  }
+  
+  /* Add New Blocks */
+  .add-blocks-container {
+    margin-top: 32px; /* Equivalent to mt-8 */
+    display: flex;
+    gap: 16px; /* Equivalent to space-x-4 */
+  }
+  
+  .add-text-button,
+  .add-image-button {
+    display: flex;
+    align-items: center; /* Equivalent to items-center */
+    padding: 8px 16px; /* Equivalent to px-4 py-2 */
+    color: #fff; /* Equivalent to text-white */
+    border-radius: 4px; /* Equivalent to rounded */
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+    font-family: 'Manrope', sans-serif;
+    border: none;
+  }
+  
+  .add-text-button {
+    background-color: #22c55e; /* Equivalent to bg-green-500 */
+  }
+  
+  .add-text-button:hover {
+    background-color: #16a34a; /* Equivalent to hover:bg-green-600 */
+  }
+  
+  .add-image-button {
+    background-color: #8b5cf6; /* Equivalent to bg-purple-500 */
+  }
+  
+  .add-image-button:hover {
+    background-color: #7c3aed; /* Equivalent to hover:bg-purple-600 */
+  }
+  
+  .button-icon {
+    margin-right: 8px; /* Equivalent to mr-2 */
+  }
+  
+  /* Output Preview */
+  .output-preview-container {
+    margin-top: 48px; /* Equivalent to mt-12 */
+    padding-top: 32px; /* Equivalent to pt-8 */
+    border-top: 1px solid #e5e7eb; /* Equivalent to border-t */
+  }
+  
+  .output-title {
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    font-weight: 700; /* Equivalent to font-bold */
+    margin-bottom: 8px; /* Equivalent to mb-2 */
+  }
+  
+  .output-json {
+    background-color: #f3f4f6; /* Equivalent to bg-gray-100 */
+    padding: 16px; /* Equivalent to p-4 */
+    border-radius: 8px; /* Equivalent to rounded */
+    overflow: auto; /* Equivalent to overflow-auto */
+    font-size: 0.75rem; /* Equivalent to text-xs */
+    font-family: 'Manrope', sans-serif;
+  }
